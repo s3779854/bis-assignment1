@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<title>Section E</title>
+<link rel="stylesheet" type="text/css" href="https://ar-fr-330-somethingsomething.s3.amazonaws.com/Assignment/css/style.css">
+
+</head>
+<body>
+  <header>
+    <div>  
+    <h4>COSC2625 Building IT Systems:  <br>
+      Assignment Part 1</h4>
+    </div>
+
+    <div class="team">
+      <h4>Group: AR-FR-330-somethingsomething</h4>
+    </div>
+  </header>
+
+<div class="topnav">
+  <a class="active" href="https://ar-fr-330-somethingsomething.s3.amazonaws.com/Assignment/Section_C.html">Section C</a>
+  <a href="https://ar-fr-330-somethingsomething.s3.amazonaws.com/Assignment/Section_D.html">Section D</a>
+  <a href="https://ar-fr-330-somethingsomething.s3.amazonaws.com/Assignment/Section_E.html">Section E</a>
+</div>
+
+<div style="padding-left:16px;padding-right:16px">
+
+  <h1>Section C: "What"</h1>
+
+  <hr>
+
+  <h2>Demonstrable Outcomes</h2>
+  <h2>Minimum Viable Features (MVF)</h2>
+
+  <p><b>Entity, object and item designs</b></p>
+  <p>The game will feature character (entity) and object designs made by the members of the group and will be represented through the game as sprites. The controllable character will have a unique design to distinguish to the player who they are in the game. Objects will also have noticeable designs to show they are items, rather than being small pixels blending into the background. Many other features down this list will incorporate entity, object and item designs. To validate this feature, the game should load in the sprites, and the player should be able to see it in-game. <br><br>
+    It should be noted this section only details the aesthetic incorporation of the designs, and later features will incorporate use of these designs. An example of a character design would be a humanoid figure. An example of an object design would be an item shaped like a key, or a red heart.</p>
+
+  <p><b>Character movement</b></p>
+  <p>Movement will be key-bound to a particular key on the keyboard and will consist of these basic character controls: movement in the left and right direction, crouching, jumping, double-jumping and dashing. This basic feature will help the player navigate the level. To validate this feature, when a correlated button on the keyboard to the movement is pressed, the character should move according to the assigned movement of the keyboard character. For example, pressing the ‘right arrow’ on the keyboard should trigger the character to move to the right. It should be noted that for our game, holding down the directional keys will continuously make the character do the specified action. <br><br>
+
+ 
+
+    Specifics: <br>
+    Left arrow: Move left <br>
+    Right arrow: Move right <br>
+    Down arrow: Crouch <br>
+    Up arrow/Space: Jump <br>
+    Up arrow/Space promptly after another jump: Double-jump <br>
+    Z key and directional key (held down): Dash</p>
+
+  <p><b>Enemies and enemy combat</b></p>
+  <p>Enemies will be non-controllable entities with basic AI that will serve as an obstacle for the player. The enemy will be targeting and moving towards the player in attempt to damage the player. Enemies and enemy attacks will be varied to promote the game’s uniqueness and to be themed depending on the level design. To validate this feature, the enemy, within a certain range of view, should move towards the player and attack, where it should damage the player if it hits the player. </p>
+
+  <p><b>Boss enemy and boss combat</b></p>
+  <p>A more specific feature under the broad feature of ‘enemies and enemy combat’ would be the boss enemy feature. This may not seem entirely different feature than the previous one, however this enemy will be a unique enemy at the end of the ‘level’ that is more difficult than other enemies in terms of damage capability and health. The validation test for this feature is alike the ‘enemies and enemy combat’ feature where the boss should be trying to damage the player by attacking when the player moves within view-range of the enemy. </p>
+
+  <p><b>Combat system</b></p>
+  <p>The character being controlled by the user will be enabled to attack/block [enemies] as a feature in our game. The attack system exists to combat the ‘enemies and enemy attacks’ feature. Character attacking will be bound to keys on the keyboard, where pressing a certain button will trigger the character to execute a combat feature. A validation test to see if the feature functions would be if the controllable character successfully makes an attack with the X key, and subsequently the enemy takes damage. <br><br>
+
+ 
+
+    This feature may be fleshed out depending if development enables it, however these key-bindings are planned: <br>
+    
+    X key: Attack (weapon swing) <br>
+    
+    C key: Block <br>
+    
+    V key: Attack (ranged weapon attack) </p>
+
+  <p><b>Status and HUD system</b></p>
+  <p>To allow the player to play the game with minimal confusion, a status bar for their character will be on screen for them at all times to indicate their status, including their health points. This feature will keep track of the player’s health by displaying a HUD (heads-up display) which will display their health points, equipment and experience (if implemented), among other things that may be added during the development cycle. An important feature of the status bar would be the health bar, which will indicate to the game whether or not the player has achieved the criteria for death. To validate this feature, when the player loads into the game, the screen should display the status bar constantly. </p>
+
+  <p><b>Death system</b></p>
+  <p>This feature is connected to the status bar system, where if the character loses all their health points on their status bar, the game will ‘game over’. This means the player will no longer be able to control the character and the screen will have an overlay indicating the player has died. After this, the game should reset back to the start of the level so the player can start over completely. To validate this feature, once the character loses all it’s health points, the game should fade the screen to black with text saying “You died” and respawn the player at the start of the level.</p>
+
+  <p><b>Inventory, collection and use of objects</b></p>
+  <p>There will be objects/items sprawled throughout the level for the user to collect, as an achievement for doing something in the game. The ‘achievement’ can be something as simple as successfully jumping to another platform, defeating an enemy or exploring the level. These objects (also known as items) will serve different purposes in the game and can be things like keys, experience orbs [if experience is implemented as a feature], healing potions and weapons. A general purpose for these items are:
+
+    <ul>
+    <li>Keys will contribute to unlocking areas of the game, like the final boss room.</li>
+    <li>Experience orbs will grant the player more experience for collecting it.</li> 
+    <li>Healing potions will restore the character’s health.</li> 
+    <li>Weapons will enable the character to attack</li>
+  </ul>
+    
+    These items will be added to a nonfunctional (not being seen in the game) ‘inventory’ that will keep track of items the player has acquired. For example, if the player obtains a bow-and-arrow, the game should now remember the character as having the ability to use a long-ranged attack and enable the use of it. Another example would be if the player has picked up a ‘key’, the game will remember the player has collected the key and enable the player to bypass the corresponding lock. <br><br>
+  
+    To validate this feature functions, items should be seen in the game as a sprite, and when collected by walking over it, should be ‘remembered’ by the game program inside the ‘inventory’. To prove an item, for example, a sword, has been remembered: the character should collect the item and after that, try to attack. If the attack goes through, the item has been remembered (“collected”) and can be used.</p>
+
+  <p><b>Sound design</b></p>
+  <p>The game will have music and sound effects so the experience feels more complete and to indicate certain events have happened within the game. This is all to both aid and enhance the player experience. <br>
+
+    A few examples: <br>
+    
+    <ul>
+    <li>When the character moves in a direction, there will be footprint sound effects to signify to the player that their input to move has gone through.</li> 
+    
+    <li>The character jumping will make a unique noise to let the player know they jumped</li> 
+    
+    <li>When an enemy is hit, it will also make a ‘slash’ noise and when the controllable character is hit, it will make a noise of someone getting hurt like ‘oof’. This will help the player differentiate what is happening.</li> 
+  </ul>
+
+    On top of character and action sound design, there will be environmental and ambient sound design like water and enemies to indicate its presence. 
+    
+    To validate this feature, entities like enemies that will make noise should be able to be heard if they are on screen.</p>
+  <p><b>Level design</b></p>
+  <p>The level design will oversee compiling all the features of the game into a playable format. The level will specifically be designed to have 2D pixel graphics and be open world. Having the game be ‘open world’ means that the world will be connected by areas (also known as ‘levels’) that are separated by the environment/atmosphere, enemies and the boss at the end of it. The player will have to traverse and explore the level in order to reach the end goal of fighting the end boss. However, going from one point to another is only part of it, as the game will require the player to have keys and specific weapons (which are both objects) that are found throughout the level to be able to access the boss. <br><br>
+
+    In our prototype for the game, the aim will be to create a tutorial ‘level’ (area) and as many areas as possible. However, due to the design of it being ‘open world’ and feature a unique experience, which may limit the amount of levels able to be created. <br><br>
+    
+    To validate this feature, when the level is loaded, all the features should load into it and into the intended areas and formats made by our development team. Specific levels will load in specific characters, objects, sounds associated with it. </p>
+
+    <br>
+    <h2>Extended Viable Features (EVF) </h2>
+
+    <p><b>Graphics animation</b></p>
+    <p>Character animation will be an extended feature not only for better graphics, but for the team to better telegraph enemy attacks and add more advanced combat. To telegraph an enemy attack is to give the player an indication that an attack will be happening, in order for the player to dodge or protect themselves from it. This is to balance the game and make it feel ‘fair’ rather than having random attacks from enemies. For example, an enemy may ‘wind up’ their weapon and then swing (attack). The time between the wind up and the attack enables the player to anticipate their next potential move to take. The validate that the character animation feature has been properly implemented into the game, the game should show animated sprites when attacking. </p>
+
+    <p><b>Earning experience</b></p>
+    <p>Experience will be the reward for defeating enemies, and the amount of experience earned from an enemy depends on the difficulty of the enemy. When an enemy is defeated, the game will give the player experience and it will be recorded and saved to display on their HUD/status bar. This feature will give the player incentive to play (besides for fun) and keep playing the game as accumulating experience can be seen as a measure of achievement. To validate this feature, the player should receive experience after defeating an enemy. The experience may be automatically added to the HUD’s experience bar or dropped on the ground of the level for the player to pick up (for interactivity), depending on the coding abilities of the group. </p>
+
+    <p><b>Leveling up (with experience) and skill points</b></p>
+    <p>The game will feature ‘skills’ to enhance the gameplay experience, which can be unlocked by the accumulated experience collected by the player. After reaching an experience milestone (filling an experience bar), the player will receive a ‘skill point’. Experience required for a skill point will be exponential to balance out the game, in which the player will gain a level per experience bar filled. The level will be on a number scale starting from 0 and the limit will depend on the amount of skills there are in the game. <br><br>
+
+      The skill point can be used to upgrade the character and give it abilities. Additional movements and upgrades can be unlocked using these skill points. Previously mentioned character movements dashing, double jumping and crouching will be unlockable through the skill points to make gameplay easier. These abilities will be used to access areas of the game that may require the user to have these abilities. For example, a ledge that may be too high (that requires double jump) or an area that requires the character to crouch to get through. Upgrade abilities can provide the character with more strength, longer attack distance, more defense, more health and quicker attack. <br><br>
+      
+      To validate this feature, when the character levels up (therefore gaining a skill point), a menu should appear asking them to spend their skill point on an upgrade. Some upgrades will be locked behind other upgrades so the player can’t immediately choose the best upgrade (upgrades have a pre-requisite of other upgrades). </p>
+
+    <p><b>Save/checkpoints</b></p>
+    <p>Checkpoints will be incorporated for the ease of the user, this may allow for more complex or longer level designs. This will be an improvement to the death system, which instead of restarting the level when death occurs, it restarts the player at the last checkpoint the player triggered. The game will maintain the progress of the player at a certain point in the level, which is indicated by a ‘checkpoint marker’. The player will have to make it to the checkpoint marker first before being able to respawn there after death. The player will only be assigned to one checkpoint at a time. Depending on programming ability, this may be the game saving state itself or the game loading the player at a certain area after death, if they have reached the certain area. <br><br>
+
+      Validation test: The game should save the player’s current state when the player touches the checkpoint marker, and when the character dies, the character should respawn at the last triggered checkpoint. </p>
+
+
+
+  <hr>
+  
+  <h2>Project Justification</h2>
+  <h2>Justified Workload</h2>
+  <table>
+<tr>
+  <th>People</th>
+  <th>Task and Time</th>
+</tr>
+
+<tr>
+  <td>Name</td>
+  <td>Task + hours</td>
+</tr>
+
+  
+</table>
+  
+  <h2>Beyond Current Capabilities</h2>
+  
+  <h3>Ziqiang Lin</h3>
+  <p>I have the basic knowledge of Java and HTML coding skills. In this project, we need to use Unity to create our game, which is a whole new thing that I have to learn. It would take time for me to get familiar with it. But through learn Unity it would develop my skills of coding and gets me more familiar with the concept of coding and the ability to take new stuff. Also, designing is always my weakness. I want to develop my designing skills through this project from designing the character and monster model with the team.</p>
+  
+  <h2>Project Risk</h2>
+  
+  <h3>Insufficient use of time</h3>
+  <p>This project contains a lot of software and code that we have never used before. It requires times to learn how to use them. The team might end up spending too much time in learning the code and system and don't have time in implementing many features. Also, when work is not appropriately assigned, in certain stages group member may not be sure about what they need to do and just wait for instruction. This can be solved by making a good plan and timetable from the start so each member can have a clear direction of where the whole time is heading.</p>
+  
+  <h3>Game crash due to unnoticed game bug</h3>
+  <p>Since our team is making a game, there is always going to be some problem with the code that would cause the game to crash. To avoid this to happen, multiple tests should be taken before release the final product and always tell different people to play around with it so they can find the problem that has not been detected before.</p>
+  
+  <h3>Final product are quiet different from the project description and scope</h3>
+  <p>From this long period of designing and implementing, there would be a lot of new ideas and feature gets to put into the game. So it becomes crucial that we make sure the product is related to the aim that was made before. This can be fixed when people just look up into the project description when they implementing new features and have some discussion within the group can also resolve the confusion.</p>
+  
+  <h2>Team Dynamic Challenge</h2>
+  <h3>Low engagement </h3>
+  <p>Making everyone contribute is an essential thing in a team. If only one or two people is putting effort in a six people project, the final product would not a disaster because not enough work would be done in it. To gain the engagement from the team would require the team member to share the idea effectively, so everyone gets some feature in the game they are interested in because work towards things that motivate us is always an exciting thing to do. More importantly, the group should listen and discuss each other’s though so no one gets left out.</p>
+  
+  <h3>Not sharing information</h3>
+  <p>Even with everyone in the team contributes to the group work, there would be a scenario where every just work on their own, and product work that have little or just no connection to each other. When the problem gets noticed when everyone put their final piece together, it would be to late to fix it. So the team would need to have some knowledge in what the other is doing a have a general direction in how the final product would look like. This requires a lot of communication in the team, and from those communications, the team will together form a perfect product.</p>
+  
+  <h3>Conflict in workload</h3>
+  <p>Sometime when assigning work to members, people don’t agree with the amount of work they receive and result in some kind of conflict in the group.  So it is vital to make sure that everyone gets a say in how to separate the workload within several topics when there is disagreement talk through as a team, so everyone gets an equal amount of work they need to do and avoid unnecessary conflict in the team.</p>
+
+  </div>
+
+  <footer>
+    <p>COSC2625 Building IT Systems: Assignment Part 1 | Group: AR-FR-330-somethingsomething</p>
+  </footer>
+  
+
+</body>
+</html>

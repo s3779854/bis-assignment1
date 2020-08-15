@@ -5,6 +5,15 @@ header {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+footer {
+	text-align: center;
+	padding: 40px 0;
+	background-color: black;
+	color: white;
+	height: 40px;
+	font-size: 11px;
+}
+
 .team {
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
@@ -78,4 +87,27 @@ td, th {
   border: 1px solid grey;
   text-align: centre;
   padding: 8px;
+}
+
+#ResourcesAndTools {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#ResourcesAndTools td, #ResourcesAndTools th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#ResourcesAndTools tr:nth-child(even){background-color: #f2f2f2;}
+
+#ResourcesAndTools tr:nth-child(odd){background-color: #ffffffb9;}
+
+#ResourcesAndTools th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #cc1940;
+  color: rgb(255, 255, 255);
 }

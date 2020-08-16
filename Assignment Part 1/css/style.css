@@ -67,6 +67,18 @@ h2 {
  font-size:18px;
  }
 
+h3 {
+	color:black;
+	font-size:24px;
+}
+
+h4 {
+	color:black;
+	font-size:30px;
+}
+
+
+
 .float-img {
   width:400px;
   text-align:left;
@@ -110,4 +122,18 @@ td, th {
   text-align: left;
   background-color: #cc1940;
   color: rgb(255, 255, 255);
+}
+
+
+.float-dp {
+	float: left;
+	clear: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border: solid black 1px;
+	padding: 2px;
+}
+
+.box {
+	display: inline-block;
 }
